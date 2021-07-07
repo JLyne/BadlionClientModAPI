@@ -80,30 +80,60 @@ You need to specify that your server allows it using this API, like in this exam
 }
 ```
 
+#### AutoText command whitelist
+
+Instead of disabling the AutoText mod, you can specify a list of commands that you want to allow.
+Below is an example which allows the use of a few commands:
+
+```json
+{  
+    "modsDisallowed": {  
+        "AutoText": {  
+            "disabled": false,
+            "settings": {  
+                "whitelistedCommands": [
+                    "/warp",
+                    "/help"
+                ]
+            }
+        }
+    }
+}
+```
+
 ### Mod Names and Fields that can be disabled
 
 + Animations
     + itemHeld
+    + itemSwitch
+    + hitBox
+    + inventory
     + blockHit
     + heartAnimation
     + damageAnimation
     + sneakingAnimation
     + eatAnimation
     + thrownItems
+    + fishingRod
+    + swordSwing
     + bowAnimation
+    + alwaysSwing
++ AntiXray
 + ArmorStatus
     + showMaxDurability
     + showPercentage
-    + inversedNumbers
     + handPiece
     + bootPiece
     + leggingPiece
     + chestPiece
     + helmetPiece
+    + offHandPiece
++ AutoFriend
 + AutoGG
 + AutoText
 + AutoTip
 + Block Overlay
++ BlockInfo
 + BossBar
 + Chat
     + textBackgroundShadow
@@ -111,26 +141,36 @@ You need to specify that your server allows it using this API, like in this exam
     + timeStampBold
     + antiSpam
     + infiniteHistory
+    + emphasizeUsername
+    + boldEffect
+    + underlineEffect
+    + italicsEffect
+    + soundEffect
++ Chunk Borders
++ Clear Glass
 + ClearWater
 + Clock
++ ColorSaturation
 + Combo Counter
 + Coordinates
+    + roundLocation
     + biomeEnabled
     + directionEnabled
     + chunksEnabled
-    + roundLocation
     + hideXYZ
+    + hideC
+    + hideBiome
     + textModCustomPrefix
     + textModOneLine
     + textModShowXZ
     + textModShowY
     + textModShowDirection
     + textModShowBiome
-    + textModShowPrefix
     + textModShowChunks
+    + biomeColors
 + CPS
     + reversed
-    + textModShowPrefix
+    + showDecimal
 + Crosshair
     + visibleHideGui
     + visibleDebugScreen
@@ -144,15 +184,10 @@ You need to specify that your server allows it using this API, like in this exam
     + outline
     + dot
     + vanillaBlendering
++ Custom Fonts
 + Direction
 + EnchantGlint
 + FOV Changer
-    + dynamicSwiftness
-    + flyingB
-    + slownessB
-    + sprintingB
-    + swiftnessB
-    + defaultB
 + FPS
     + reversed
 + Fullbright
@@ -164,25 +199,40 @@ You need to specify that your server allows it using this API, like in this exam
     + playerHitboxesEnabled
     + projectileHitboxesEnabled
     + itemFrameHitboxesEnabled
+    + hideStuckArrows
+    + fireballHitboxesEnabled
+    + witherskullHitboxesEnabled
+    + arrowHitboxesEnabled
+    + fireworkrocketHitboxesEnabled
+    + snowballHitboxesEnabled
+    + xporbHitboxesEnabled
++ InventoryBlur
 + Item Counter
-+ ItemInfo
-+ ItemPhysic
++ Item Info
++ Item Physics
++ Item Tracker
++ JustEnoughItems
 + Keystrokes
 + LevelHead
++ Light Overlay
 + Memory
 + MiniMap
 + MLG Cobweb
 + MotionBlur
 + MumbleLink
-+ Music
++ Name History
 + NickHider
++ NotEnoughUpdates
 + Notifications
 + Pack Display
++ Pack Tweaks
 + Particles
 + Perspective
 + Ping
++ Player Counter
 + PotionStatus
 + Protection
++ Quickplay
 + Reach Display
 + Replay
 + Saturation
@@ -190,7 +240,9 @@ You need to specify that your server allows it using this API, like in this exam
     + printerEnabled
 + Scoreboard
     + showNumbers
+    + removeNumberOffset
 + Server Address
+    + showIcon
 + Shinypots
 + SkyblockAddons
 + Stopwatch
@@ -198,9 +250,15 @@ You need to specify that your server allows it using this API, like in this exam
 + TeamSpeak
 + TimeChanger
 + Timers
++ TNT Time
++ ToggleChat
 + ToggleSneak
     + inventorySneak
 + ToggleSprint
     + flySpeed
++ Uptime
 + Waypoints
++ WeatherChanger
++ World Edit CUI
 + Zoom
+    + useOptifineZoom
