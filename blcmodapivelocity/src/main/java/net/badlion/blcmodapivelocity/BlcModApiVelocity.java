@@ -9,7 +9,6 @@ import com.velocitypowered.api.plugin.annotation.DataDirectory;
 import com.velocitypowered.api.proxy.ProxyServer;
 import com.velocitypowered.api.proxy.messages.ChannelIdentifier;
 import com.velocitypowered.api.proxy.messages.MinecraftChannelIdentifier;
-import net.badlion.blcmodapivelocity.Conf;
 import net.badlion.blcmodapivelocity.listener.PlayerListener;
 import org.slf4j.Logger;
 
@@ -23,7 +22,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Path;
 
-@Plugin(id = "blcmodapi", name = "BadLion Client Mod API", version = "1.2.0",
+@Plugin(id = "blcmodapi", name = "BadLion Client Mod API", version = "1.2.3",
         description = "", authors = {"BadLion"})
 public class BlcModApiVelocity {
 

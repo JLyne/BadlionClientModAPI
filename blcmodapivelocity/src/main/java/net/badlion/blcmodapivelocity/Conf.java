@@ -18,7 +18,7 @@ public class Conf {
 
 		private boolean disabled;
 		private JsonObject extra_data;
-
+		private JsonObject settings;
 	}
 
 }
