@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/badlionclientmodapi.iml" filepath="$PROJECT_DIR$/badlionclientmodapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blcmodapibukkit/blcmodapibukkit.iml" filepath="$PROJECT_DIR$/blcmodapibukkit/blcmodapibukkit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blcmodapibukkit-1.17/blcmodapibukkit-1.17.iml" filepath="$PROJECT_DIR$/blcmodapibukkit-1.17/blcmodapibukkit-1.17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blcmodapibungee/blcmodapibungee.iml" filepath="$PROJECT_DIR$/blcmodapibungee/blcmodapibungee.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blcmodapivelocity/blcmodapivelocity.iml" filepath="$PROJECT_DIR$/blcmodapivelocity/blcmodapivelocity.iml" />
+    </modules>
+  </component>
+</project>
