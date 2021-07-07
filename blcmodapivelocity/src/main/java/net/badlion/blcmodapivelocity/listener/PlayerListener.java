@@ -7,7 +7,7 @@ import net.badlion.blcmodapivelocity.BlcModApiVelocity;
 
 public class PlayerListener {
 
-	private BlcModApiVelocity plugin;
+	private final BlcModApiVelocity plugin;
 
 	public PlayerListener(BlcModApiVelocity plugin) {
 		this.plugin = plugin;
@@ -15,8 +15,10 @@ public class PlayerListener {
 
 	@Subscribe
 	public void onLogin(LoginEvent event) {
-		// Send the disallowed mods to players when they login to the proxy. A notification will appear on the Badlion Client so they know the mod was disabled
+		// Send the disallowed mods to players when they login to the proxy. A notification will appear on the Badlion
+		// Client so they know the mod was disabled
 		Player player = event.getPlayer();
-		player.sendPluginMessage(plugin.getIdentifier(), BlcModApiVelocity.GSON_NON_PRETTY.toJson(this.plugin.getConf().getModsDisallowed()).getBytes());
+		player.sendPluginMessage(plugin.getIdentifier(), BlcModApiVelocity.GSON_NON_PRETTY
+				.toJson(this.plugin.getConf().getModsDisallowed()).getBytes());
 	}
 }

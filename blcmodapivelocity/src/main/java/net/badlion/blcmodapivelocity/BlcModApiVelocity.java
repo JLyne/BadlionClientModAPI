@@ -22,8 +22,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Path;
 
-@Plugin(id = "blcmodapi", name = "BadLion Client Mod API", version = "1.2.3",
-        description = "", authors = {"BadLion"})
+@Plugin(id = "blcmodapi", name = "BadLion Client Mod API", version = "1.2.3", authors = {"Jim (NotKatuen)", "BadLion"})
 public class BlcModApiVelocity {
 
 	public static final Gson GSON_NON_PRETTY = new GsonBuilder().enableComplexMapKeySerialization().disableHtmlEscaping().create();
